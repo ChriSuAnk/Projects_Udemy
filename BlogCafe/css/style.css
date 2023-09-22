@@ -12,6 +12,8 @@ html{
 }
 *,*::before,*::after{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: var(--font-parrafos);
@@ -55,4 +57,28 @@ img{
 }
 .centrar-texto{
     text-align: center;
+}
+
+/*------HEADER---------*/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header__texto{
+    text-align: center;
+    color: var(--color-blanco);
+    
+}
+.logo__nombre,.navegacion__enlace{
+    color: #ffffff;
+}
+@media(min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
